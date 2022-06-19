@@ -15,6 +15,10 @@
     opacity: .5;
 }
 
+.font-75{
+    font-size: .75rem;
+}
+
 /* MAIN: SIDE BAR */
 
 .side-bar{
@@ -22,11 +26,12 @@
     color: white;
     width: 18%;
     height: 100%;
+    margin-bottom: 100px;
 }
 
 .logo{
-
     margin: 15px 10px;
+    width: 70%;
 }
 
 .icon-list{
@@ -34,5 +39,51 @@
     align-items: center;
 }
 .icons{
-    width: 2rem;
+    width: 1.5rem;
+    margin: 10px;
 }
+
+.icons:hover{
+    opacity: 1;
+}
+
+li span{
+    margin-left: 10px;
+    align-self: center;
+}
+
+.playlist{
+    margin: 10px;
+}
+
+.playlist h3{
+    margin: 30px 0 5px 0;
+}
+
+.playlist-ul{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.install, .user{
+    display: block;
+    width: 2rem;
+    margin: 10px;
+}
+
+hr{
+    width: 100%;
+}
+.user img{
+    opacity: 1;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+.call-to-action{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    margin-left: 18%;
+    margin-top: 0;
+}
+    

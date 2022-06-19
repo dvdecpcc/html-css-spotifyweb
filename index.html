@@ -13,7 +13,7 @@
 <body>
 
     <!-- MAIN SECTION -->
-    <div class="main-container flex">
+    <div class="main-container">
         <!-- SIDE BAR: USER'S OPTIONS-->
         <div class="side-bar">
             <div class="logo">
@@ -21,16 +21,17 @@
             </div>
             <div class=" icon-list flex">
                 <ul>
-                    <li class="icons opacity"><img src="./img/home.svg" alt="home"><span> Home</span></li>
-                    <li class="icons opacity"><img src="./img/search.svg" alt="search"> Cerca</li>
-                    <li class="icons opacity"><img src="./img/libreria.svg" alt=""> La tua libreria</li>
+                    <li class="icons opacity flex"><img src="./img/home.svg" alt="home"><span id="icon-text" class="font-75"> Home</span></li>
+                    <li class="icons opacity flex"><img src="./img/search.svg" alt="search"><span id="icon-text" class="font-75"> Cerca</span></li>
+                    <li class="icons opacity flex"><img src="./img/libreria.svg" alt="library"><span id="icon-text" class="font-75"> La tua libreria</span></li>
                 </ul>
             </div>
             
-            <div class="playlist">
-                <h4>PLAYLIST</h4>
-                <p>Crea Playlist</p>
-                <ul>
+            <div class="playlist font-75">
+                <h3>PLAYLIST</h3>
+                
+                <ul class="playlist-ul opacity">
+                    <li><i class="fa-solid fa-plus-large"></i>Crea Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -41,17 +42,23 @@
                 </ul>
             </div>
 
-            <div>
-                <p></p>
-                <hr>
-                <p></p>
+            <div class="install flex opacity font-75">
+                <div>
+                    <img src="./img/download.svg" alt="download"> Installa app
+                </div>
+            </div>
+            <hr>
+            <div class="user">
+                <img src="./img/profile.svg" alt="John Doe">
+                John Doe
+            </div>
             </div>
         </div>
     
     <!-- MAIN: SPTFY SUGGESTIONS, RECENT-->
-        <section class="main">
+        <section class="main flex">
 
-            <div class="opacity">
+            <div class="call-to-action opacity">
                 <button>EFFETTUA L'UPGRADE</button>
             </div>
             <nav id="main-nav">
