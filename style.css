@@ -1,0 +1,38 @@
+/* COMMON RULES */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.opacity{
+    opacity: .5;
+}
+
+/* MAIN: SIDE BAR */
+
+.side-bar{
+    background-color: black;
+    color: white;
+    width: 18%;
+    height: 100%;
+}
+
+.logo{
+
+    margin: 15px 10px;
+}
+
+.icon-list{
+    justify-content: flex-start;
+    align-items: center;
+}
+.icons{
+    width: 2rem;
+}
