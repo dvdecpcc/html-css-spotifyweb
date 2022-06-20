@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
 </head>
 <body>
@@ -51,7 +52,7 @@
 
                 </div>
                 <hr>
-                <div class="user">
+                <div class="user flex">
                     <img src="./img/profile.svg" alt="John Doe">
                     <p class="font-65"> John Doe</p> 
                 </div>
@@ -59,7 +60,7 @@
         </div>
     
     <!-- MAIN: SPTFY SUGGESTIONS, RECENT-->
-        <section class="main flex">
+        <section class="main flex column">
 
             <div class="call-to-action opacity flex">
                 <div>EFFETTUA L'UPGRADE</div>
@@ -78,60 +79,90 @@
             <section id="recently-played">
                 <h2>Recently played</h2>
 
-                <div class="cards">
+                <div class="cards flex">
 
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./img/metal_lifting.jpg" alt="">
                         <div class="overlay"></div>
-                        <h4></h4>
-                        <p></p>
+                        <h4>Heavy Metal</h4>
+                        <p class="opacity">Subtitle</p>
                     </div>
 
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./img/stranger.jpeg" alt="">
                         <div class="overlay"></div>
-                        <h4></h4>
-                        <p></p>
+                        <h4>Stranger Things</h4>
+                        <p class="opacity">Subtitle</p>
                     </div>
 
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./img/aquietplace.jpeg" alt="">
                         <div class="overlay"></div>
-                        <h4></h4>
-                        <p></p>
+                        <h4>A Quiet Place</h4>
+                        <p class="opacity">Subtitle</p>
                     </div>
 
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./img/split.jpeg" alt="">
                         <div class="overlay"></div>
-                        <h4></h4>
-                        <p></p>
+                        <h4>Split</h4>
+                        <p class="opacity">Subtitle</p>
                     </div>
 
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./img/cure.jpeg" alt="">
                         <div class="overlay"></div>
-                        <h4></h4>
-                        <p></p>
+                        <h4>A Cure for Wellness</h4>
+                        <p class="opacity">Subtitle</p>
                     </div>
 
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./img/sinister.jpeg" alt="">
                         <div class="overlay"></div>
-                        <h4></h4>
-                        <p></p>
+                        <h4>Sinister</h4>
+                        <p class="opacity">Subtitle</p>
                     </div>
                 </div>
             </section>    
                 <!-- SUGGESTIONS: CREATED FOR THE USER -->
-         <section id="for-you">
-            
-         </section>
+            <section id="for-you">
+                <h2>Suggested for you</h2>
+                <div class="cards flex">
+                    <div class="card">
+                        <img src="./img/radar.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <h4>Release Radar</h4>
+                        <p class="opacity">Subtitle</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/mixdaily.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <h4>Daily Mix 1</h4>
+                        <p class="opacity">Subtitle</p>
+                    </div>
+                </div>    
+            </section>
         
          <!-- SUGGESTIONS: MOST POPULAR -->
          <section id="popular">
-            
-         </section>
+            <h2>Most Popular</h2>
+            <div class="cards flex">
+                <div class="card">
+                    <img src="./img/youg.jpeg" alt="">
+                    <div class="overlay"></div>
+                    <h4>XX</h4>
+                    <p class="opacity">Subtitle</p>
+                </div>
+
+                <div class="card">
+                    <img src="./img/einaudi.jpeg" alt="">
+                    <div class="overlay"></div>
+                    <h4>YY</h4>
+                    <p class="opacity">Subtitle</p>
+                </div>
+            </div>    
+        </section>
     </div>
 
     <!-- PLAYER SECTION -->
@@ -145,7 +176,7 @@
         </div>
 
         <div class="center-footer flex">
-            <div class="top-footer">
+            <div class="top-footer flex">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
                 <i class="fa-solid fa-play"></i>

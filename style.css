@@ -22,6 +22,11 @@
 .main-container{
     width: 100%;
     height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+.column{
+    flex-direction: column;
 }
 /* MAIN: SIDE BAR */
 
@@ -30,6 +35,8 @@
     color: white;
     width: 250px;
     height: calc(100vh - 80px)
+    position: relative;
+    flex-shrink: 0;
 }
 
 .logo{
@@ -37,6 +44,9 @@
     width: 50%;
 }
 
+.side-top{
+    height: calc(100% - 80px);
+}
 .icon-list{
     justify-content: flex-start;
     align-items: center;
@@ -66,6 +76,7 @@ li span{
 .playlist-ul{
     list-style: none;
     line-height: 2rem;
+    overflow-y: scroll;
 }
 
 
@@ -90,8 +101,10 @@ hr{
 }
 
 .side-bottom{
-    position: sticky;
-    bottom: 0;
+    position: absolute;
+    height: 30%;
+    width: 250px;
+    bottom: 15px;
 }
 
 
@@ -121,54 +134,47 @@ hr{
 
 /* MAIN: RIGHT SIDE */
 
+.main{
+    background-color: rgb(20, 25, 34);
+    width: calc(100vw - 250px);
+    color: white;
+}
+
+nav{
+    width: 100%;
+}
+
 #main-nav ul{
     list-style: none;
 }
 
 
-
-.main{
-    background-color: rgb(20, 25, 34);
-    width: calc(100% - 250px);
-}
-
 .main-nav ul{
-    justify-content: space-around;
-    margin-top: 80px;
+    justify-content: center;
+    margin-top: 70px;
 }
 .main-nav li{
     list-style: none;
     color: white;
     font-size: .5rem;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .main-nav li:hover{
     border-bottom: 2px solid rgb(173, 249, 48);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cards{
+    flex-wrap: wrap;
+    width: 100%
+}
+.card{
+    width: calc(100% /6 - 10px);
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+}
 /* FOOTER: PLAYER */
 
 footer{
@@ -180,8 +186,11 @@ footer{
 
 footer i{
     color: white;
+    align-self: center;
+    padding: 10px;
 }
 
-.left-footer{
+
+.left-footer img{
     padding: 10px;
 }
