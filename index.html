@@ -13,56 +13,59 @@
 <body>
 
     <!-- MAIN SECTION -->
-    <div class="main-container">
+    <div class="main-container flex">
         <!-- SIDE BAR: USER'S OPTIONS-->
         <div class="side-bar">
-            <div class="logo">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <div class=" icon-list flex">
-                <ul>
-                    <li class="icons opacity flex"><img src="./img/home.svg" alt="home"><span id="icon-text" class="font-75"> Home</span></li>
-                    <li class="icons opacity flex"><img src="./img/search.svg" alt="search"><span id="icon-text" class="font-75"> Cerca</span></li>
-                    <li class="icons opacity flex"><img src="./img/libreria.svg" alt="library"><span id="icon-text" class="font-75"> La tua libreria</span></li>
-                </ul>
-            </div>
-            
-            <div class="playlist font-75">
-                <h3>PLAYLIST</h3>
-                
-                <ul class="playlist-ul opacity">
-                    <li><i class="fa-solid fa-plus-large"></i>Crea Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                </ul>
-            </div>
-
-            <div class="install flex opacity font-75">
-                <div>
-                    <img src="./img/download.svg" alt="download"> Installa app
+            <div class="side-top">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
                 </div>
-            </div>
-            <hr>
-            <div class="user">
-                <img src="./img/profile.svg" alt="John Doe">
-                John Doe
-            </div>
+                <div class=" icon-list flex">
+                    <ul>
+                        <li class="icons opacity flex"><img src="./img/home.svg" alt="home"><span id="icon-text" class="font-65"> Home</span></li>
+                        <li class="icons opacity flex"><img src="./img/search.svg" alt="search"><span id="icon-text" class="font-65"> Cerca</span></li>
+                        <li class="icons opacity flex"><img src="./img/libreria.svg" alt="library"><span id="icon-text" class="font-65"> La tua libreria</span></li>
+                    </ul>
+                </div>
+
+                <div class="playlist font-65">
+                    <h3>PLAYLIST</h3>
+
+                    <ul class="playlist-ul opacity">
+                        <li><i class="fa-solid fa-plus-large"></i>Crea Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="side-bottom">
+                <div class="install flex opacity font-65">
+                    <div>
+                        <img src="./img/download.svg" alt="download"><p> Installa app</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user">
+                    <img src="./img/profile.svg" alt="John Doe">
+                    <p class="font-65"> John Doe</p> 
+                </div>
             </div>
         </div>
     
     <!-- MAIN: SPTFY SUGGESTIONS, RECENT-->
         <section class="main flex">
 
-            <div class="call-to-action opacity">
-                <button>EFFETTUA L'UPGRADE</button>
+            <div class="call-to-action opacity flex">
+                <div>EFFETTUA L'UPGRADE</div>
             </div>
-            <nav id="main-nav">
-                <ul>
+            <nav class="main-nav">
+                <ul class="flex">
                     <li>IN EVIDENZA</li>
                     <li>PODCAST</li>
                     <li>CLASSIFICHE</li>
@@ -71,66 +74,79 @@
                     <li>SCOPRI</li>
                 </ul>
             </nav>
-        </section id="recently-played">
-            <h2>Recently played</h2>
 
-            <div class="cards">
+            <section id="recently-played">
+                <h2>Recently played</h2>
 
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="overlay"></div>
-                    <h4></h4>
-                    <p></p>
+                <div class="cards">
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                        <h4></h4>
+                        <p></p>
+                    </div>
                 </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="overlay"></div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="overlay"></div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="overlay"></div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="overlay"></div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="overlay"></div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <!-- SUGGESTIONS: CREATED FOR THE USER -->
-        <section id="for-you">
-
-        </section>
-
-        <!-- SUGGESTIONS: MOST POPULAR -->
-        <section id="popular">
-
-        </section>
+            </section>    
+                <!-- SUGGESTIONS: CREATED FOR THE USER -->
+         <section id="for-you">
+            
+         </section>
+        
+         <!-- SUGGESTIONS: MOST POPULAR -->
+         <section id="popular">
+            
+         </section>
     </div>
+
     <!-- PLAYER SECTION -->
     <footer class="flex">
+        <div class="left-footer flex">
 
+        </div>
+
+        <div class="center-footer flex">
+
+        </div>
+
+        <div class="right-footer flex">
+
+        </div>
     </footer>
 </body>
 </html>
