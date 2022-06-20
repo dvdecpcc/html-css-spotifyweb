@@ -34,7 +34,7 @@
     background-color: black;
     color: white;
     width: 250px;
-    height: calc(100vh - 80px)
+    height: calc(100vh - 80px);
     position: relative;
     flex-shrink: 0;
 }
@@ -165,7 +165,6 @@ nav{
 }
 
 .cards{
-    flex-wrap: wrap;
     width: 100%
 }
 .card{
@@ -194,3 +193,17 @@ footer i{
 .left-footer img{
     padding: 10px;
 }
+
+
+/* MEDIA QUERIES */
+
+/* RESP. TABLET */
+@media screen and (max-width: 768px){
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: calc(100% / 4 - 10px);
+    }
+}
+/* RESP. MOBILE */
