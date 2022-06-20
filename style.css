@@ -19,6 +19,10 @@
     font-size: .65rem;
 }
 
+.main-container{
+    width: 100%;
+    height: calc(100vh - 80px);
+}
 /* MAIN: SIDE BAR */
 
 .side-bar{
@@ -64,6 +68,7 @@ li span{
     line-height: 2rem;
 }
 
+
 .install, .user{
     display: block;
     width: 2rem;
@@ -84,6 +89,10 @@ hr{
     background-color: lightgray;
 }
 
+.side-bottom{
+    position: sticky;
+    bottom: 0;
+}
 
 
 /* CALL TO ACTION */
@@ -97,7 +106,7 @@ hr{
     align-items: flex-end;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 250px;
 }
 .call-to-action div{
     border: 2px solid white;
@@ -165,4 +174,14 @@ hr{
 footer{
     height: 80px;
     background-color: rgb(40, 40, 40);
+    justify-content: space-between;
+    z-index: 15;
+}
+
+footer i{
+    color: white;
+}
+
+.left-footer{
+    padding: 10px;
 }
