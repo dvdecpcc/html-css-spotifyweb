@@ -34,7 +34,8 @@
     background-color: black;
     color: white;
     width: 250px;
-    height: calc(100vh - 80px);
+    height: 100%;
+    min-height: 450px;
     position: relative;
     flex-shrink: 0;
 }
@@ -67,6 +68,7 @@ li span{
 
 .playlist{
     margin: 10px;
+    overflow: hidden;
 }
 
 .playlist h3{
@@ -78,12 +80,16 @@ li span{
     line-height: 2rem;
     overflow-y: scroll;
 }
-
+.playlist-ul span{
+    font-size: 2rem;
+    background-color: gray;
+    padding: 1px 10px;
+    margin-left: 0;
+}
 
 .install, .user{
-    display: block;
     width: 2rem;
-    margin: 10px;
+    margin: 10px;   
 }
 
 .install:hover{
@@ -98,13 +104,17 @@ hr{
     opacity: 1;
     border-radius: 50%;
     background-color: lightgray;
+    vertical-align: middle;
 }
-
+.user p{
+    vertical-align: middle;
+}
 .side-bottom{
     position: absolute;
-    height: 30%;
+    height: 80px;
     width: 250px;
-    bottom: 15px;
+    bottom: 50px;
+    background-color: black;
 }
 
 
@@ -174,10 +184,17 @@ nav{
 .card img{
     width: 100%;
 }
+
+.overlay{
+    background-color: black;
+    z-index: 3;
+    width: 100%;
+}
 /* FOOTER: PLAYER */
 
 footer{
     height: 80px;
+    width: 100%;
     background-color: rgb(40, 40, 40);
     justify-content: space-between;
     z-index: 15;
@@ -186,7 +203,7 @@ footer{
 footer i{
     color: white;
     align-self: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -194,7 +211,18 @@ footer i{
     padding: 10px;
 }
 
+.bottom-footer{
+    height: 4px;
+    width: 100%;
+    background-color: gray;
+}
 
+.bar{
+    height: 4px;
+    width: 30%;
+    background-color: lightgrey;
+    z-index: 3;
+}
 /* MEDIA QUERIES */
 
 /* RESP. TABLET */
