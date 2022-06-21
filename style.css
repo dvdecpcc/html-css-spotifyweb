@@ -183,11 +183,12 @@ nav{
 .card{
     width: calc(100% /6 - 10px);
     margin: 10px;
-    position: relative;
+    position: relative;  
 }
 .card img{
     width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .overlay{
