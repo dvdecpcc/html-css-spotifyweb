@@ -207,3 +207,15 @@ footer i{
     }
 }
 /* RESP. MOBILE */
+@media screen and (max-width: 576px) {
+    .side-bar{
+        width: 50px;
+    }
+    #icon-text{
+        display: none;
+    }
+
+    .card{
+        width: calc(100% / 2 - 10px);
+    }
+}
