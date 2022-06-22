@@ -48,6 +48,11 @@
     width: 50%;
 }
 
+#favicon{
+    display: none;
+    filter: invert(1);
+}
+
 .side-top{
     height: calc(100% - 80px);
 }
@@ -286,9 +291,24 @@ footer i{
         width: calc(100% / 4 - 10px);
     }
 }
+
+
 /* RESP. MOBILE */
 @media screen and (max-width: 576px) {
     .side-bar{
+        width: 50px;
+    }
+    #logo{
+        display: none;
+    }
+    .favicon{
+        display: block;
+    }
+    .call-to-action{
+        width: 100% - 50px;
+    }
+
+    .side-bottom{
         width: 50px;
     }
     #icon-text{
