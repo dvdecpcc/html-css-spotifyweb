@@ -301,8 +301,11 @@ footer i{
     #logo{
         display: none;
     }
-    .favicon{
+    #favicon{
         display: block;
+    }
+    .playlist{
+        display: none;
     }
     .call-to-action{
         width: 100% - 50px;
@@ -318,4 +321,9 @@ footer i{
     .card{
         width: calc(100% / 2 - 10px);
     }
+
+    .fa-shuffle, .fa-backward-step, .fa-forward-step, .fa-arrow-rotate-right, .fa-heart, .fa-folder, .fa-list, .fa-display, .bar2, .volume{
+        display: none;
+    }
+
 }
